@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kise</title>
+</head>
+<body>
+	<button onclick="getAccounts()">kk</button>
+<script type="text/javascript">
+	function getAccounts() {
+
+	var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", 'http://127.0.0.1:5000/protected', false );
+    xmlHttp.setRequestHeader("Authorization:"+'Bearer '+'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTIyMTM2NTQsIm5iZiI6MTU5MjIxMzY1NCwianRpIjoiZjI4MjdmNDQtN2JiZS00OGNjLWE4NzMtYTMzYmE3NDQ1OGFjIiwiZXhwIjoxNTkyMjE0NTU0LCJpZGVudGl0eSI6InRlc3QiLCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.EDyWjdzSX5PMI2AuqN152BzkQP2Kzt9XC4oPbrHFGD0');
+    xmlHttp.send(null);
+}
+</script>
+</body>
+</html>
